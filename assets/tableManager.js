@@ -89,7 +89,7 @@ function addRow(obj) {
 	let country = document.createElement("td");
 	let email = document.createElement("td");
 
-	id.innerHTML = obj.id != isNaN ? obj.id : -1;
+	id.innerHTML = obj.id;
 	name.innerHTML = obj.name;
 	surname.innerHTML = obj.surname;
 	phone.innerHTML = obj.phone;
@@ -109,8 +109,11 @@ function addRow(obj) {
 
 function getNextId() {
 	let rows = $("#table")[0].rows;
-	let nextId = rows[rows.length - 1].firstChild.innerHTML;
-	return parseInt(nextId) + 1;
+	if(rows.length > 1) {
+		let nextId = rows[rows.length - 1].firstElementChild.innerHTML;
+		return parseInt(nextId) + 1;
+	}
+	return -1;
 }
 
 function showProgressBar(show) {
