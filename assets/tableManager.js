@@ -57,8 +57,14 @@ function getButtons() {
 }
 
 function showSpinner(show) {
-	if(show) $("#spinner")[0].classList.remove("d-none");
-	else $("#spinner")[0].classList.add("d-none");
+	if(show) {
+		$("#spinner").modal("show");
+		document.title = "Spring Crud | Loading...";
+	}
+	else {
+		$("#spinner").modal("hide");
+		document.title = "Spring Crud";
+	}
 }
 
 function getRowById(id) {

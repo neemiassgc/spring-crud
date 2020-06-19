@@ -8,16 +8,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
 
-        <style type="text/css">
-            #spinner {
-                width: 3rem;
-                height: 3rem;"
-            }
-
-            #progress-bar {
-                height: 3px;
-            }
-        </style>
+        <link rel="stylesheet" href="./assets/style.css"/>
 
         <title>Spring Crud</title>
     </head>
@@ -57,9 +48,6 @@
                             </tr>
                         </thead>
                     </table>
-                    <div class="spinner-border d-none mt-3" role="status" id="spinner">
-                        <span class="sr-only">Loading...</span>
-                    </div>
                 </div>
             </div>
 
@@ -152,8 +140,13 @@
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="modal mt-5" data-backdrop="static" tabindex="-1" role="dialog" id="spinner">
+                <div class="modal-dialog text-center mt-5">
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+        </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
