@@ -123,3 +123,8 @@ function deleteAllRows() {
 function displayWarning(data) {
 	$(".warning").text(data); 
 }
+
+function clearAllInput() {
+	$("input").text("");
+	$(".warning").test("");
+}

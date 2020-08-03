@@ -74,10 +74,6 @@ function updateLastChange() {
 	}
 }
 
-function clearAllInput() {
-	for(let e of $("input")) e.value = "";
-}
-
 function deleteUser(id) {
 	showSpinner(true);
 	$.ajax({
