@@ -1,7 +1,7 @@
-function getTableBody(obj) {
+function buildTableBody(users) {
 	let tbody = $("#table")[0].createTBody();
 
-	for(let o of obj) {
+	for(let o of users) {
 		let row = document.createElement("tr");
 
 		let id = document.createElement("td");
@@ -34,7 +34,8 @@ function getTableBody(obj) {
 	}
 
 	$(".row")[0].classList.add("overflow-auto");
-	return tbody;
+	
+	$("#table")[0].appendChild(tbody);
 }
 
 function getButtons() {
@@ -78,13 +79,6 @@ function getRowById(id) {
 	return null;
 }
 
-function loadTable() {
-	showSpinner(true);
-	showProgressBar(true);
-
-	loadUsers();
-}
-
 function addRow(obj) {
 	let tbody = $("#table")[0].tBodies[0];
 	let row = document.createElement("tr");
@@ -122,24 +116,10 @@ function getNextId() {
 	return -1;
 }
 
-function showProgressBar(show) {
-	if(show) $("#progress-bar")[0].classList.remove("d-none");
-	else $("#progress-bar")[0].classList.add("d-none");
-}
-
-function growProgressBar(amount) {
-	let bar = $("#progress")[0];
-    let progress = bar.style.width.substr(0,  bar.style.width.length - 1);
-    bar.style.width = (parseInt(progress) + amount)+"%";
-
-    if(bar.style.width === "100%") {
-    	setTimeout( () => {
-    		showProgressBar(false);
-    		bar.style.width = "0%";
-    	}, 500);
-    }
-}
-
 function deleteAllRows() {
 	$("#table")[0].tBodies[0].innerHTML = "";
+}
+
+function displayWarning(data) {
+	$(".warning").text(data); 
 }
