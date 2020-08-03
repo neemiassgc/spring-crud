@@ -126,5 +126,5 @@ function displayWarning(data) {
 
 function clearAllInput() {
 	$("input").text("");
-	$(".warning").texst("");
+	$(".warning").text("");
 }
