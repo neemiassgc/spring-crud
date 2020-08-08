@@ -107,6 +107,8 @@ function editUser(user) {
 			if(user.email != undefined) cols[5].innerHTML = user.email;
 
 			$("#edit-modal").modal("hide");
-		} displayWarning(response.message);
+			
+		}
+		else displayWarning(response.message);
 	});
 }

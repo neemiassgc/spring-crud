@@ -52,7 +52,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content" id="issue-modal-content">
                         <div class="modal-body p-5">
-                            <div class="row mb-3 text-center">
+                            <div class="row mb-4 text-center">
                                 <div class="col-12">
                                     <span class="warning text-danger"></span>
                                 </div>
@@ -90,8 +90,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-outline-warning btn-sm" id="edit-action-button">Next</button>
+                            <button type="button" class="btn btn-dark btn" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-warning btn" id="edit-action-button">Next</button>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content" id="issue-modal-content">
                         <div class="modal-body p-5">
-                            <div class="row mb-3 text-center">
+                            <div class="row mb-4 text-center">
                                 <div class="col-12">
                                     <span class="warning text-danger"></span>
                                 </div>
@@ -139,8 +139,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-dark btn-sm" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-outline-success btn-sm" id="insert-action-button">Next</button>
+                            <button type="button" class="btn btn-dark btn" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-success btn" id="insert-action-button">Next</button>
                         </div>
                     </div>
                 </div>
@@ -160,15 +160,13 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
         <script>
-            const URL = "https://springcrudrestapi.herokuapp.com/";
-            window.onload = () => {
-                loadUsers();
-                loadHeaderEvents();
-            }
+            // const URL = "https://springcrudrestapi.herokuapp.com/";
+            const URL = "http://localhost:2222/";
+            window.onload = () => loadPage();
         </script>
 
         <script src="./assets/header-events.js"></script>
-        <script src="./assets/page-utils.js"></script>
+        <script src="./assets/page-tools.js"></script>
         <script src="./assets/table-events.js"></script>
     </body>
 </html>

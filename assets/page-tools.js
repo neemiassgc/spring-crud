@@ -128,3 +128,8 @@ function clearAllInput() {
 	$("input").text("");
 	$(".warning").text("");
 }
+
+function loadPage() {
+	loadUsers();
+    loadHeaderEvents();
+}
