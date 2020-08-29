@@ -1,5 +1,5 @@
 # spring-crud
-Live demo available [here](https://x4musk0.github.io/spring-crud/)
+Live demo available [here](https://N1ptyl0.github.io/spring-crud/)
 
 # Technologies
 ![html](https://i.ibb.co/mcdgk5D/HTML5-Badge-64.png)
