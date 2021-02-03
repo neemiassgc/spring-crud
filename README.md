@@ -1,5 +1,5 @@
 # spring-crud
-Live demo available [here](https://neemaissgc.github.io/spring-crud/)
+Live demo available [here](https://neemiassgc.github.io/spring-crud/)
 
 # Technologies
 ![html](https://i.ibb.co/mcdgk5D/HTML5-Badge-64.png)
